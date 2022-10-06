@@ -24,4 +24,4 @@ jobs:
         env:
           ACCESS_KEY_ID: ${{ secrets.ACCESS_KEY_ID }}
           ACCESS_KEY_SECRET: ${{ secrets.ACCESS_KEY_SECRET }}
-        run: mvn -Dhere.token.endpoint.url="https://stg.account.api.here.com/oauth2/token" -Dhere.access.key.id=$ACCESS_KEY_ID -Dhere.access.key.secret=$ACCESS_KEY_SECRET clean install
+        run: mvn -Dhere.token.endpoint.url=https://stg.account.api.here.com/oauth2/token -Dhere.access.key.id=$ACCESS_KEY_ID -Dhere.access.key.secret=$ACCESS_KEY_SECRET clean install
