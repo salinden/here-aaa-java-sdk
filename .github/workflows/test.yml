@@ -21,5 +21,4 @@ jobs:
       - name: Verify Maven installation
         run: mvn -v
       - name: Run AAA SDK tests
-        env:
         run: mvn -Dhere.token.endpoint.url=https://stg.account.api.here.com/oauth2/token -Dhere.access.key.id=${{ secrets.ACCESS_KEY_ID }} -Dhere.access.key.secret=${{ secrets.ACCESS_KEY_SECRET }} clean install
